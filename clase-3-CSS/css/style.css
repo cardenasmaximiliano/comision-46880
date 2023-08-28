@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Qwitcher+Grypen&display=swap');
+
+#star-wars{
+    background-color: green;
+}
+/*
+    colores del sitio
+
+    #F2ECBE
+    #E2C799
+    #9A3B3B
+
+    tipografias elegidas
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+*/
+
+/* header{
+    background-color: #9A3B3B;
+}
+
+header h1{
+    color: #F2ECBE;
+} */
+
+
+/**************inicio de header***************/
+header{
+    background-color: #9A3B3B;
+}
+
+.header-contactos{
+    background-color: aqua !important;
+}
+.navbar{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: red;
+}
+
+/**************inicio de main del index*******************/
+main{
+    background-color: lightblue;
+}
+
+main section{
+    background-color: #F2ECBE;
+}
+
+.milagros-esposito{
+    background-color: #9A3B3B;
+}
+
+.milagros-esposito h2{
+    text-align: center;
+}
+
+.main-contactos{
+    background-color: lightcyan;
+}
+
+.main-contactos h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 50px;
+}
+
+.main-contactos p{
+    text-indent: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+

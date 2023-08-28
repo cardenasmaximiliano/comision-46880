@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: juan;
+    src: url("../assets/fonts/Hoppin.ttf");
+}
 html{
     font-size: 16px;
     /*
@@ -24,7 +27,9 @@ html{
     text-align: center;
     color: white;
 }
-
+.section-principal h1{
+    font-family: juan;
+}
 .section-principal p{
     font-size: 0.5em;
 }
@@ -32,7 +37,11 @@ html{
 .box{
     width: 25rem;
     height: 25rem;
-    background-color: lightcoral;
+    background-image: url("../assets/img/masahiro-miyagi-5LuNxytEGiI-unsplash.jpg");
+    margin: .625rem;
+    margin: 10px 20px 5px 10px;
+    border-radius: 10px 50px 25% 5px;
+    overflow: hidden;
 }
 
 .box h2{
@@ -43,11 +52,55 @@ html{
     padding-bottom: 20px;
     padding-left: 5px; */
     /* padding: 10px 30px 20px 10px; */
-    padding: 20rem 50rem;
+    padding: .625rem .9375rem;
     text-align: center;
-    
+    border: 3px solid rgb(71, 246, 228);
+    /* border-width: 10px;
+    border-style:dotted;
+    border-color: bisque; */
+    border-top: .3125rem dotted beige;
+}
+/**display*/
+
+.navbar li{
+    display: inline;
+}
+
+.display a{
+    display: block;
+}
+
+.general{
+    width: 300px;
+    height: 300px;
+}
+footer{
+    position: relative;
+}
+.color1{
+    background-color: aquamarine;
+}
+.color2{
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
 
 }
+.color3{
+    background-color: brown;
+}
+.contenedora{
+    position: relative;
+}
+.contenedora h2{
+    position: absolute;
+    font-size: 20px;
+    color: blueviolet;
+    top: 0;
+}
+
+
 /**
 medidas relativas y medidas absolutas
 
