@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&family=Rubik+Iso&display=swap');
+/*
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Iso', cursive;
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: rgb(255, 183, 0);
+}
+
+.banner div h1{
+    font-family: 'Rubik Iso', cursive;
+    font-size: 3.125rem;
+}
+.banner div p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.card{
+    width: 320px;
+    height: 480px;
+    background-color: #FAF1E4;
+    padding: 1.875rem .9375rem .9375rem .9375rem;
+}
+.card div{
+    text-align: center;
+    padding-top: 1.875rem;
+}
+.card div img{
+    width: 100%;
+}
