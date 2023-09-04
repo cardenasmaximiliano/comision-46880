@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+header{
+    background-color: antiquewhite;
+}
+
+.navbar{
+    background-color: white;
+}
+.navbar li{
+    display: inline;
+}
+.navbar li a{
+    background-color: red;
+}
+/*medidas
+
+absoluta = medidaa que no cambia dependiendo de la pantalla  donde se abre
+
+px = pixel  
+
+relativas = estas medidas van a adaptarse al tamaño de pantalla
+
+% = porcentaje. 
+
+rem = tomo como base al font-size de HTML.
+1 rem = 10px
+2 rem 20px
+3 rem = 30px
+5 rem = 
+
+16 px = 100%;  1rem = 10px;
+10 px = 62.5%
+
+html{
+    font-size: 62.5%;
+}
+**/
+/**
+naturaleza de la etiqueta segun css
+
+etiquetas linea o inline =se adapta solamente su contenido
+
+etiquetas de bloque o block = ocupa el 100% del ancho del pantalla
+
+*/
+
+
+
+.section-principal{
+    background-color: lightblue;
+    width: 100%; /**ancho del contenedor*/
+    height: 31.25rem ; /*alto del contenedor**/
+    background-image: url("../assets/img/neom-d6NJmJ60B8M-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/**box model*/
+.section-secundaria{
+    width: 100%;
+    height: 12.5rem;
+}
+.section-secundaria button{
+    background-color: lightblue;
+    /* padding: 1.875rem; */
+    /* padding-top: 5px; */
+    /* padding-right: 20px;
+    padding-bottom: 1.5625rem;
+    padding-left: .9375rem; 
+    padding: 25px 0px .3125rem 10px;*/
+    padding: 30px 30px;
+    border: 2px solid rgba(0, 0, 255, 0.287); 
+    /*border-width: .1875rem ;
+    border-style: dashed;
+    border-color: blueviolet;
+    border-top: 2px solid red;*/
+    margin: 1.25rem;
+    border-radius: .625rem;
+    box-shadow: 0px 5px 1px rgb(201, 57, 57);
+
+}
+
+.section-secundaria button a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 10px grey;
+}
+
+
