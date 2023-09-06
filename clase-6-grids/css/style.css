@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grids{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.205);
+    grid-template-columns: repeat(3, 200px) 400px ; /**12 columnas como maximo nos deja crear grids, aceptan medidas relativas y absolutas**/
+    grid-template-rows: 150px 150px 150px; /**las que quieras Myrey**/
+    grid-template-areas: 
+    "pepito section1 section3 section3"
+    "pepito  section1 section3 section3"
+    "section4 section1 section5 ."
+    ;
+    justify-content: center;
+    align-content: center;
+    /* justify-items: center;
+    align-items: center; */
+    row-gap: 1.25rem;
+    column-gap: 1.25rem;
+}
+
+.section1{
+    background-color: lightcoral;
+    grid-area: section1;
+}
+.section2{
+    background-color: rgb(223, 237, 66);
+    grid-area: pepito;
+    width: 100%;
+    height: 100%;
+    
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section3{
+    background-color: rgb(104, 248, 79);
+    grid-area: section3;
+}
+.section3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section4{
+    background-color: rgb(128, 176, 240);
+    grid-area: section4;
+}
+.section5{
+    background-color: rgb(231, 75, 240);
+    grid-area: section5;
+} 

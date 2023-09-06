@@ -6,11 +6,18 @@
 
 header{
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     background-color: black;
     padding: 0px 1.25rem;
+    position: sticky;
+    top: 0;
+    /* right: ;
+    bottom: ;
+    left: ; */
+    z-index: 4;
 }
 .logo{
     width: 80px;
@@ -47,21 +54,64 @@ h1{
     flex-direction: row; por defecto
     flex-wrap: nowrap; por defecto
     */
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+     flex-wrap: wrap; 
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
+   
     
 }
 .card{
     width: 21.875rem;
-    height: 25rem;
+    height: 31.25rem;
     background-color: rgba(219, 219, 219, 0.052);
     border-radius: .625rem;
     overflow: hidden;
     box-shadow: 2px 2px .625rem rgba(128, 128, 128, 0.166);
     margin-bottom: .3125rem;
+    position: relative;
+    
 }
+
+.card div img{
+    width: 2.5rem;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+}
+.card-1{
+    background-color: lightblue;
+    order: 4;
+    /* align-self: flex-start ; */
+}
+.card-2{
+    background-color: rgb(230, 229, 173);
+    order: 2;
+    /* align-self: flex-end; */
+}
+.card-3{
+    background-color: rgb(230, 175, 173);
+    order: 3;
+}
+
+.card-4{
+    background-color: rgb(230, 173, 224);
+    order: 3;
+}
+
+
+
+
 .card img{
     width: 100%;
+}
+
+.newsection{
+    height: 1000px;
+}
+
+.whatsapp-fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }

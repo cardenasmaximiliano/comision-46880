@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grids{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.549);
+    grid-template-columns: repeat(8,1fr); /**12 columnas como maximo nos deja crear grids, aceptan medidas relativas y absolutas**/
+    grid-template-rows: repeat(8,1fr); /**las que quieras Myrey**/}
+
+
+    .section1{
+        background-color: rgba(240, 128, 128, 0.235);
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 7;
+        order: 3;
+    }
+    .section2{
+        background-color: rgb(223, 237, 66);
+      
+        width: 100%;
+        height: 100%;
+        grid-row: 8 /9;
+        grid-column: 5/6;
+        order: 4;
+    }
+    .section2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .section3{
+        background-color: rgb(104, 248, 79);
+        grid-row: 2 / 4;
+        grid-column: 6 / 9 ;
+        order: 2;
+    }
+    .section3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .section4{
+        background-color: rgb(128, 176, 240);
+        grid-row: 5/8;
+        grid-column: 2/6;
+        order:5;
+
+    }
+    .section5{
+        background-color: rgb(231, 75, 240);
+        grid-row: 3 / 6;
+        grid-column: 5 / 7;
+        order: 1;
+    } 
