@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 6.25rem;
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navBar li a{
+    text-decoration: none;
+    font-size: 1.5625rem;
+    color: white;
+  
+}
+
+.navBar li a:hover{
+    color: red;
+    background-color: blue;
+    text-decoration: underline;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.container-cards div{
+    width: 21.875rem;
+    height: 25rem;
+
+}
+
+.container-cards div:hover{
+    box-shadow: 0px 10px .625rem grey;
+    width: 22.5rem;
+}
+.container-cards div img{
+    width: 100%;
+    height: 100%;
+    filter: sepia(3);
+}
+
+.container-cards div img:hover{
+    filter: grayscale(0);
+    box-shadow: 0px 0px .625rem grey;
+    
+}
+
+button{
+    width: 5.625rem;
+    height: 1.875rem;
+}
+
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: beige;
+}
+
+input:focus{
+    border-color: red;
+    box-shadow: 2px 2px 5px red;
+
+}
+
+.parrafos p:first-child{
+    color: blue;
+    font-size: 1.875rem;
+}
+.parrafos p:last-child{
+    color: blueviolet;
+}
+.parrafos p:nth-child(2){
+    font-size: 1.875rem;
+    background-color: lightcoral;
+}
+
+.nav-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(239, 150, 41);
+    padding: 1rem 1.5rem;
+}
+nav .logo{
+    font-weight: 700;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav #toggle, nav label{
+    display: none;
+}
+
+@media(max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+}
+
+.pseudoelementos h2{
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(255, 119, 0);
+    padding: 1.25rem;
+}
+
+.pseudoelementos h2:hover::before{
+    content: "Andres ";
+    color: lightblue;
+}
+
+.pseudoelementos h2:hover::after{
+    content: " Messi";
+    color: lightblue;
+}
+
+.pseudoelementos p::first-letter{
+    font-size: 2.5rem;
+    color: red;
+    text-decoration: underline;
+
+}
+
+.pseudoelementos p::first-line{
+    background-color: lightblue;
+}
+
+.pseudoelementos p::selection{
+    background-color: lightcoral;
+    color: blue;
+    font-style: italic;
+}
+
+/* nav__ul--flex */
