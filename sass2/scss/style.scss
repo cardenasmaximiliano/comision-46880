@@ -1,0 +1,23 @@
+/* primero se llama a las variables mixins y todo lo que corresponda a utilites**/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+
+
+/**todo lo qu este en base**/
+
+@import "./base/reset";
+
+
+/* ahora llamo todo lo que es layout**/
+
+@import "./layout/header";
+@import "./layout/main-index";
+
+
+@import "./layout/medias/media768";
+
+
+
+

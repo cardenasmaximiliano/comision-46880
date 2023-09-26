@@ -1,0 +1,29 @@
+.section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background;
+    h1{
+        font-size: 2.5rem;
+        color: $font-color;
+    }
+}
+
+.section2{
+   @include flex(column,flex-end,center,.3125rem)
+}
+
+.section3{
+    @extend .section2;
+    align-items: flex-end;
+}
+
+.section4{
+    @extend .section3;
+    color: pink;
+}
+.section5{
+    @include grid(1fr 1fr 1fr, 200px 200px 300px, "p1 p2 p3""p1 p2 p3""p1 p2 p3")
+}

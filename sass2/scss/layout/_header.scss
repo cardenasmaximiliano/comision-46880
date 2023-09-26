@@ -1,0 +1,24 @@
+.headerIndex{
+    background-color: $background;
+    div{
+        img{
+            width: 50px;
+        }
+    }
+    nav{
+        .navBar{
+            @include flex(row,center,flex-end,.625rem);
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                  @include font (20px,none,none,red);
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
